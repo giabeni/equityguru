@@ -1,0 +1,572 @@
+/** Equity Guru Blogger Template
+*** By Integra Studio
+*** 2016
+*** https://www.fiverr.com/integrastudio
+*** green: #009448
+**/
+
+
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+/* ---- General ---*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    color:#555;
+}
+
+a, a:visited, a:active{
+    color:#fff;
+    text-decoration: none;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+.row{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.row .inner-container{
+    margin:0 10%;
+}
+
+.row .row-title{
+    widt:auto;
+    font-size:22px;
+    color: #009448;
+    text-transform: uppercase;
+    margin:5px auto;
+    text-align: center;
+    border-bottom:3px solid #009448;
+    display: table;
+    position: relative;
+    z-index: 2;
+}
+
+/* --- Header ----*/
+
+.header-row{
+    background: #009448;
+    padding:10px 0;
+    color: #ffffff;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.header-row a, .header-row a:visited, .header-row a:active{
+    color:#fff;
+}
+
+.header-row a:hover{
+    text-shadow: 0 0 3px #FFFFFF;
+}
+
+.header-row .logo{
+    display: inline-block;;
+    width:30%;
+    float: left;
+    font-size: 68px;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 1px #003e1f;
+}
+
+.header-row .column-right{
+    display: inline-block;
+    float: right;
+    width:65%;
+    padding:0 20px;
+}
+
+.header-row .phone-number{
+    font-size:22px;
+    height:30px;
+    line-height:30px;
+    float: left;
+    text-shadow: 1px 1px 0px #003e1f;
+}
+
+.header-row .icons{
+    font-size:22px;
+    height:30px;
+    line-height:30px;
+    float: right;
+    display: inline-block;
+}
+
+ul.main-menu{
+    display: inline-block;
+    list-style: none;
+    width:100%;
+    position: relative;
+    margin:10px 0;
+
+}
+
+ul.main-menu li{
+    display: inline-block;
+    list-style:none;
+    float: left;
+    margin-right: 10px;
+    background: #007138;
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.5);
+}
+
+ul.main-menu li a {
+    padding:0 20px;
+    height:60px;
+    line-height:60px;
+    font-size:20px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0px #003e1f;
+}
+
+ul.main-menu li ul.sub-menu{
+    list-style:none;
+    position: absolute;
+    top:60px;
+    background: #fff;
+    display: block;
+    height:0;
+    opacity: 0;
+    overflow: hidden;
+    z-index: 3;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+
+ul.main-menu li ul.sub-menu li{
+    list-style:none;
+    display: block;
+    float: none;
+    background: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+ul.main-menu li ul.sub-menu a {
+    color: #009448;
+    font-size:16px;
+    text-transform: none;
+    text-shadow: none;
+    height:30px;
+    line-height: 30px;
+}
+
+ul.main-menu li:hover ul.sub-menu{
+    height:auto;
+    opacity: 1;
+}
+
+marquee.news{
+    padding:5px;
+    background: #007138;
+}
+
+
+marquee.news a{
+    margin:0 20px;
+}
+
+
+/* --- Slider ----*/
+.main-slider .slide{
+    height: 350px;
+    text-align: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    padding:160px 0;
+}
+
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(20,20,20,0.2);
+    z-index: 1;
+}
+
+.main-slider .slide h2{
+    font-size:28x;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px #003e1f;
+    margin:0 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-slider .slide a{
+    background: #FFFFFF;
+    color: #009448;
+    padding: 10px;
+    -webkit-box-shadow: 1px 1px 1px 0 #009448;
+    box-shadow: 1px 1px 1px 0 #009448;
+    text-transform: uppercase;
+    font-size:14px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-slider .slide a:hover{
+    background: #009448;
+    color: #FFFFFF;
+}
+.slick-dots {
+    bottom: 40px;
+}
+
+/* --- Welcome ---*/
+
+.welcome-icons{
+    display: inline-block;
+    width: 100%;
+}
+
+.welcome-icons .box{
+    display: inline-block;
+    float: left;
+    width:33%;
+    margin:20px 0.01%;
+    text-align: center;
+    padding:20px 10px;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.welcome-icons .box:hover {
+    background: rgba(200,200,200,0.2);
+}
+
+.welcome-icons .box i.icon{
+    border: 2px solid #009448;
+    color: #009448;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    padding: 30px;
+    margin:10px 0;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 600ms;
+    transition: -webkit-transform 600ms;
+}
+
+.welcome-icons .box:hover i.icon{
+    -webkit-transform: rotateY(-360deg);
+}
+
+.welcome-icons h3{
+    font-size:20px;
+}
+
+.welcome-icons ul{
+    font-size:14px;
+}
+
+.welcome-icons ul li{
+    margin:10px 0;
+    list-style: none;
+}
+
+.welcome-icons a{
+    background: #009448;
+    color: #FFFFFF;
+    padding: 8px;
+    -webkit-box-shadow: 1px 1px 1px 0 #003e1f;
+    box-shadow: 1px 1px 1px 0 #003e1f;
+    text-transform: uppercase;
+    font-size:12px;
+    margin-top:10px;
+}
+
+.welcome-icons a:hover{
+    background: #FFFFFF;
+    color: #009448;
+}
+
+/* --- Services ----*/
+
+.services-row{
+    background: #333;
+    background-image: url(http://family-company.com/wp-content/uploads/2016/04/investments.jpg);
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+
+.services-row .row-title{
+    color: #FFF;
+}
+
+.services-slider{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    overflow: visible;
+}
+
+.services-slider .slick-list {
+    overflow: hidden;
+    margin: 0;
+    padding: 22px 0;
+}
+
+.services-slider .slide{
+    display: inline-block;
+    float: left;
+    width:25%;
+    margin:20px;
+    text-align: center;
+    padding:0px 30px 20px;
+    background: #FFF;
+    -webkit-box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.5);
+    -webkit-border-radius:10px;;
+    -moz-border-radius:10px;;
+    border-radius:10px;
+
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.services-slider .slide:hover{
+    -webkit-box-shadow: 1px 1px 5px 5px #009448;
+    box-shadow: 1px 1px 5px 5px #009448;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.services-slider .slide i.icon{
+    background: #009448;
+    border: 2px solid #FFF;
+    color: #FFF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    padding: 30px;
+    margin:10px 0 -20px;
+    position: relative;
+    top:-30px;
+}
+
+
+.services-slider h3{
+    font-size:20px;
+    color: #009448;
+}
+
+.services-slider .slide ul{
+    font-size:12px;
+}
+
+.services-slider ul li{
+    margin:20px 0;
+    list-style: none;
+}
+
+.services-slider a{
+    background: #009448;
+    color: #FFF;
+    padding: 8px;
+    -webkit-box-shadow: 1px 1px 1px 0 #003e1f;
+    box-shadow: 1px 1px 1px 0 #003e1f;
+    text-transform: uppercase;
+    font-size:12px;
+    margin-top:10px;
+}
+
+.services-slider a:hover{
+    background: #FFF;
+    color: #009448;
+}
+
+/* -- Free Trial ---*/
+.info-row{
+    background: #eee;
+    padding:20px 0;
+    margin-top:-10px;
+}
+
+.free-trial{
+    display: inline-block;
+    background: url(https://media.licdn.com/mpr/mpr/p/1/005/04b/37d/32b2413.jpg);
+    -webkit-background-size:;
+    background-size:cover;
+    width:32%;
+    text-align: center;
+    padding: 10px;
+    float: left;
+    height: 172px;
+    margin-left:2%;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+    box-shadow:  1px 1px 2px 0 rgba(0,0,0,0.2);
+
+}
+.free-trial h2{
+    color: #FFFFFF;
+    font-size:32px;
+    line-height:100px;
+    width:100%;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px #000;
+}
+
+.free-trial a{
+    background: #009448;
+    color: #FFF;
+    padding: 8px;
+    -webkit-box-shadow: 1px 1px 1px 0 #003e1f;
+    box-shadow: 1px 1px 1px 0 #003e1f;
+    text-transform: uppercase;
+    font-size:16px;
+    margin-top:20px;
+}
+
+/* --- Info Icons ---*/
+.info-icons{
+    display: inline-block;
+    width: 32%;
+    background: #009448;
+    padding:10px;
+    float: left;
+    height: 172px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+    box-shadow:  1px 1px 2px 0 rgba(0,0,0,0.2);
+
+}
+
+.info-icons h2{
+    width:100%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.info-icons .box{
+    display: inline-block;
+    float: left;
+    width:33%;
+    margin: 0.01%;
+    text-align: center;
+    padding:0 10px;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+    color: #FFF;
+}
+
+.info-icons .box:hover {
+    background: rgba(200,200,200,0.2);
+}
+
+.info-icons .box i.icon{
+    border: 2px solid #FFF;
+    color: #FFF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    padding: 20px;
+    margin:10px 0;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 600ms;
+    transition: -webkit-transform 600ms;
+}
+
+.info-icons .box:hover i.icon{
+    -webkit-transform: rotateY(-360deg);
+}
+
+.info-icons h3{
+    font-size:18px;
+    font-weight: normal;
+}
+
+/* --- Info Icons ---*/
+.members-icons{
+    display: inline-block;
+    width: 32%;
+    margin-left:2%;
+    background: #FFFFFF;
+    padding:10px;
+    float: left;
+    height: 172px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+    box-shadow:  1px 1px 2px 0 rgba(0,0,0,0.2);
+
+}
+
+.members-icons h2{
+    width:100%;
+    color: #009448;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.members-icons .box{
+    display: inline-block;
+    float: left;
+    width:33%;
+    margin: 0.01%;
+    text-align: center;
+    padding:0 10px;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.members-icons .box:hover {
+    background: rgba(200,200,200,0.2);
+}
+
+.members-icons .box i.icon{
+    background: #009448;
+    color: #FFFFFF;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    padding: 20px;
+    margin:10px 0;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: -webkit-transform 600ms;
+    transition: -webkit-transform 600ms;
+}
+
+.members-icons .box:hover i.icon{
+    -webkit-transform: rotateY(-360deg);
+}
+
+.members-icons h3{
+    font-size:18px;
+    font-weight: normal;
+}

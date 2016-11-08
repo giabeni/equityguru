@@ -61,6 +61,14 @@ a, a:visited, a:active{
     padding:10px 0;
     color: #ffffff;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#009448+1,006633+100 */
+    background: #009448; /* Old browsers */
+    background: -moz-linear-gradient(top,  #009448 1%, #006633 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #009448 1%,#006633 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #009448 1%,#006633 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#009448', endColorstr='#006633',GradientType=0 ); /* IE6-9 */
+
 }
 
 .header-row a, .header-row a:visited, .header-row a:active{
@@ -120,10 +128,11 @@ ul.main-menu li{
     background: #007138;
     -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.5);
     box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.5);
+    position: relative;
 }
 
 ul.main-menu li a {
-    padding:0 20px;
+    padding:0 25px;
     height:60px;
     line-height:60px;
     font-size:20px;
@@ -132,15 +141,19 @@ ul.main-menu li a {
 }
 
 ul.main-menu li ul.sub-menu{
-    list-style:none;
+    list-style: none;
     position: absolute;
-    top:60px;
-    background: #fff;
+    top: 60px;
+    background: rgba(0, 113, 56, 0.84);
     display: block;
-    height:0;
+    width: 100%;
+    height: 0;
     opacity: 0;
     overflow: hidden;
     z-index: 3;
+    padding: 2px;
+    -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.5);
+    box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.5);
     -webkit-transition: all 200ms linear;
     -moz-transition: all 200ms linear;
     -ms-transition: all 200ms linear;
@@ -149,21 +162,26 @@ ul.main-menu li ul.sub-menu{
 }
 
 ul.main-menu li ul.sub-menu li{
-    list-style:none;
+    list-style: none;
     display: block;
     float: none;
     background: none;
     -webkit-box-shadow: none;
+    text-align: center;
     box-shadow: none;
+    margin: 0;
 }
 
 ul.main-menu li ul.sub-menu a {
-    color: #009448;
-    font-size:16px;
+    color: #ccc;
+    font-size: 14px;
     text-transform: none;
     text-shadow: none;
-    height:30px;
+    height: 30px;
     line-height: 30px;
+    padding: 5px 5px;
+    text-align: center;
+    margin: 0;
 }
 
 ul.main-menu li:hover ul.sub-menu{
@@ -173,7 +191,10 @@ ul.main-menu li:hover ul.sub-menu{
 
 marquee.news{
     padding:5px;
-    background: #007138;
+    background: rgba(20,20,20,0.3);
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
 }
 
 
@@ -587,6 +608,8 @@ marquee.news a{
     border-radius:5px;
     -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
     box-shadow:  1px 1px 2px 0 rgba(0,0,0,0.2);
+    position: relative;
+    padding-bottom: 20.5%; height: 0; overflow: hidden;
 }
 
 .testimonials-slider .slide{
@@ -611,24 +634,25 @@ marquee.news a{
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Arial', sans-serif;
     float: left;
-    padding: 40px 20px;
+    padding: 5% 10%;
 	
 }
 
 .testimonials-slider .slide h5{
 	
     font-size: 14px;
-    float: right;
+    float: none;
+    text-align: center;
     color: #222;
 	
 }
 
 .testimonials .view-all{
 	width: 100%;
-    font-size: 10px;
+    font-size: 12px;
     color: #009448;
 	display: inline-block;
     text-align: right;
@@ -650,7 +674,7 @@ marquee.news a{
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
-    padding-top: 30px; height: 0; overflow: hidden;
+    padding-top: 9%; height: 0; overflow: hidden;
 }
  
 .video-container iframe,
@@ -673,4 +697,66 @@ marquee.news a{
 @-webkit-keyframes blink {
 	from { opacity:1; }
 	to { opacity:0; }
+}
+
+/* --- Footer ---*/
+.footer-row{
+    background: #111;
+    color: #ccc;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-row .footer-text{
+    padding:20px;
+    font-size: 14px;
+    font-weight:normal;
+    margin:10px;
+}
+
+.footer-column{
+    width: 22%;
+    margin-left:3%;
+    display: inline-block;
+    float: left;
+}
+
+.footer-row a:hover{
+    text-shadow: 0 0 3px #FFFFFF;
+}
+
+.footer-column:first-child{
+    margin-left: 0;
+}
+
+.footer-column h2{
+    width:100%;
+    font-family: 'Oswald', sans-serif ;
+    color: #009448;
+    border-bottom: 2px solid #009448;
+}
+
+.footer-column ul{
+    list-style-position: inside;
+    padding:5px;
+}
+
+.footer-column li{
+    padding:5px;
+}
+
+.footer-column.useful-links li{
+    padding:5px;
+    width: 42%;
+    float: left;
+}
+
+.footer-column.social a i{
+    padding: 10px;
+    margin-top:20px;
+}
+
+.footer-column.social a:hover i{
+    padding: 10px;
+    margin-top:20px;
+    text-shadow: 0 0 3px #FFFFFF;
 }

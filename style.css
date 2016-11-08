@@ -75,7 +75,7 @@ a, a:visited, a:active{
     display: inline-block;;
     width:30%;
     float: left;
-    font-size: 68px;
+    font-size: 400%;
     color: #FFFFFF;
     text-shadow: 2px 2px 1px #003e1f;
 }
@@ -227,8 +227,9 @@ marquee.news a{
     background: #009448;
     color: #FFFFFF;
 }
-.slick-dots {
-    bottom: 40px;
+
+.slider-row .slick-dots{
+    bottom: 40px !important;
 }
 
 /* --- Welcome ---*/
@@ -406,7 +407,7 @@ marquee.news a{
 .info-row{
     background: #eee;
     padding:20px 0;
-    margin-top:-10px;
+    margin-top:-5px;
 }
 
 .free-trial{
@@ -505,7 +506,7 @@ marquee.news a{
 }
 
 .info-icons h3{
-    font-size:18px;
+    font-size:14px;
     font-weight: normal;
 }
 
@@ -567,6 +568,109 @@ marquee.news a{
 }
 
 .members-icons h3{
-    font-size:18px;
+    font-size:14px;
     font-weight: normal;
+}
+
+
+/*--- Testimonials---*/
+
+.testimonials{
+	display: inline-block;
+    width: 66%;
+    margin-top: 20px;
+    background: #FFFFFF;
+    padding:0.5% 2%;
+    float: left;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+    box-shadow:  1px 1px 2px 0 rgba(0,0,0,0.2);
+}
+
+.testimonials-slider .slide{
+	display: inline-block;
+	width: 100%;
+}
+
+.testimonials-slider .slide img{
+	display: inline-block;
+	width: 20%;
+	height: auto;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    float: left;
+	
+}
+.testimonials-slider .slide p{
+	display: inline-block;
+	width: 77%;
+	margin-left: 2%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    float: left;
+    padding: 40px 20px;
+	
+}
+
+.testimonials-slider .slide h5{
+	
+    font-size: 14px;
+    float: right;
+    color: #222;
+	
+}
+
+.testimonials .view-all{
+	width: 100%;
+    font-size: 10px;
+    color: #009448;
+	display: inline-block;
+    text-align: right;
+}
+
+/* -- Video container --- */
+.main-video{
+	display: inline-block;
+    width: 32%;
+    margin-top: 20px;
+    margin-left: 2%;
+    float: left;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    -webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
+    box-shadow:  1px 1px 2px 0 rgba(0,0,0,0.2);
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* -- Blink ----*/
+.blink{
+    -webkit-animation: blink 400ms infinite alternate;
+    -moz-animation: blink 400ms infinite alternate;
+    -o-animation: blink 400ms infinite alternate;
+    animation: blink 400ms infinite alternate;
+}
+@-webkit-keyframes blink {
+	from { opacity:1; }
+	to { opacity:0; }
 }

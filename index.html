@@ -258,6 +258,34 @@
                 <h3>Money</h3>
             </div>
         </div>
+        
+        <div class="testimonials">
+            <h2 class="row-title">Past Performance</h2>
+        	<div class="testimonials-slider">
+        		<div class="slide">
+        			<img src="https://www.trade4target.com/timthumb.php?src=https://www.trade4target.com/uxf/testimonial/79902nazish_passport_size.jpg"/>
+        			<p>Lorem ipsum dolor sit amet blabla blablabla bla blalbablabl blablablablalb lbalb lbalbala</p>
+        			<h5>Name Lastname</h5>
+        		</div>
+        		<div class="slide">
+        			<img src="https://www.trade4target.com/timthumb.php?src=https://www.trade4target.com/uxf/testimonial/49155photo.jpg"/>
+        			<p>Lorem ipsum dolor sit amet blabla blabla blablablablalb lbalb lbalbala</p>
+        			<h5>Name Lastname</h5>
+        		</div>
+        		<div class="slide">
+        			<img src="https://www.trade4target.com/timthumb.php?src=https://www.trade4target.com/uxf/testimonial/94866s200_syed_nasir.shah_gillani.jpg"/>
+        			<p>Lorem ipsum dolor sit amet blabla blablabla bla blalbablabl blablablablalb lbalb lbalbalalb lbalb lbalbalalb lbalb lbalbala lb lbalb lbalbala</p>
+        			<h5>Name Lastname</h5>
+        		</div>
+        	</div>
+        	<a href="" class="view-all">View All</a>
+        </div>
+        
+        <div class="main-video">
+        	<div class="video-container">
+         		<iframe width="560" height="315" src="https://www.youtube.com/embed/zeSpVs6M0fk" frameborder="0" allowfullscreen></iframe>
+			</div>
+        </div>
     </div>
 </div>
 
@@ -283,7 +311,22 @@
             slidesToShow: 4,
             slidesToScroll: 1
         });
+        
+        $('.testimonials-slider').slick({
+  			dots: false,
+  			infinite: true,
+  			speed: 500,
+  			fade: true,
+  			cssEase: 'linear',
+  			accessibility: false,
+  			autoplay: true,
+  			arrows: false,
+  			
+		});
+		
     });
+    
+
 </script>
 </body>
 </html>

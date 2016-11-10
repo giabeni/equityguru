@@ -16,9 +16,11 @@
     box-sizing: border-box;
 }
 
-body{
+body, html{
     font-family: 'Oswald', sans-serif;
     color:#555;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 a, a:visited, a:active{
@@ -124,6 +126,7 @@ ul.main-menu li{
     display: inline-block;
     list-style:none;
     float: left;
+    margin-bottom:10px;
     margin-right: 10px;
     background: #007138;
     -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.5);
@@ -284,12 +287,12 @@ marquee.news a{
     padding: 30px;
     margin:10px 0;
     -webkit-transform-style: preserve-3d;
-    -webkit-transition: -webkit-transform 600ms;
-    transition: -webkit-transform 600ms;
+    -webkit-transition: -webkit-transform 4s;
+    transition: -webkit-transform 4s ;
 }
 
 .welcome-icons .box:hover i.icon{
-    -webkit-transform: rotateY(-360deg);
+    -webkit-transform: rotateY(-2880deg);
 }
 
 .welcome-icons h3{
@@ -496,8 +499,8 @@ marquee.news a{
 .info-icons .box{
     display: inline-block;
     float: left;
-    width:33%;
-    margin: 0.01%;
+    width:30%;
+    margin: 1.2%;
     text-align: center;
     padding:0 10px;
     -webkit-transition: all 600ms ease;
@@ -515,7 +518,7 @@ marquee.news a{
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    padding: 20px;
+    padding: 20%;
     margin:10px 0;
     -webkit-transform-style: preserve-3d;
     -webkit-transition: -webkit-transform 600ms;
@@ -527,7 +530,7 @@ marquee.news a{
 }
 
 .info-icons h3{
-    font-size:14px;
+    font-size:12px;
     font-weight: normal;
 }
 
@@ -559,8 +562,8 @@ marquee.news a{
 .members-icons .box{
     display: inline-block;
     float: left;
-    width:33%;
-    margin: 0.01%;
+    width:30%;
+    margin: 1.2%;
     text-align: center;
     padding:0 10px;
     -webkit-transition: all 600ms ease;
@@ -577,7 +580,7 @@ marquee.news a{
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    padding: 20px;
+    padding: 20%;
     margin:10px 0;
     -webkit-transform-style: preserve-3d;
     -webkit-transition: -webkit-transform 600ms;
@@ -589,7 +592,7 @@ marquee.news a{
 }
 
 .members-icons h3{
-    font-size:14px;
+    font-size:12px;
     font-weight: normal;
 }
 
@@ -759,4 +762,61 @@ marquee.news a{
     padding: 10px;
     margin-top:20px;
     text-shadow: 0 0 3px #FFFFFF;
+}
+
+@media screen and (max-width: 1000px) {
+    .row .inner-container{
+        margin:0 2%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header-row .column-right {
+        width: 100%;
+    }
+
+    .header-row .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-icons, .free-trial, .testimonials, .members-icons, .main-video{
+        width:100%;
+        margin:20px 0 0;
+        height:auto;
+        padding-bottom: 20px;
+    }
+
+    .footer-column{
+        width:48%;
+        margin:20px 1% 0;
+        height:auto;
+        padding-bottom: 20px;
+    }
+
+    .footer-column h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome-icons .box, .info-icons .box, .members-icons .box{
+        width:100%;
+        margin: 10px 0;
+    }
+
+    .members-icons .box i.icon, .info-icons .box i.icon{
+        padding:5%;
+    }
+    .info-icons, .free-trial, .testimonials, .members-icons, .main-video{
+        width:100%;
+        margin:20px 0 0;
+        height:auto;
+        padding-bottom: 20px;
+    }
+
+    .footer-column{
+        width:100%;
+        margin:20px 0 0;
+    }
 }

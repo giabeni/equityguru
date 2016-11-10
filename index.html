@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Equity Guru</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <link type="text/css" rel="stylesheet" href="style.css" />
 
@@ -144,7 +145,7 @@
             </div>
 
             <div class="slide">
-                <i class="fa fa-university fa-3x icon"></i>
+                <i class="fa fa-users fa-3x icon"></i>
                 <h3>Service #1</h3>
                 <ul>
                     <li><i class="fa fa-star"></i> Item 1 with a large text and bla bla bla with a large text and bla bla bla </li>
@@ -156,7 +157,7 @@
             </div>
 
             <div class="slide">
-                <i class="fa fa-university fa-3x icon"></i>
+                <i class="fa fa-handshake-o fa-3x icon"></i>
                 <h3>Service #1</h3>
                 <ul>
                     <li><i class="fa fa-star"></i> Item 1 with a large text and bla bla bla with a large text and bla bla bla </li>
@@ -168,7 +169,7 @@
             </div>
 
             <div class="slide">
-                <i class="fa fa-university fa-3x icon"></i>
+                <i class="fa fa-bar-chart fa-3x icon"></i>
                 <h3>Service #1</h3>
                 <ul>
                     <li><i class="fa fa-star"></i> Item 1 with a large text and bla bla bla with a large text and bla bla bla </li>
@@ -180,7 +181,7 @@
             </div>
 
             <div class="slide">
-                <i class="fa fa-university fa-3x icon"></i>
+                <i class="fa fa-balance-scale fa-3x icon"></i>
                 <h3>Service #1</h3>
                 <ul>
                     <li><i class="fa fa-star"></i> Item 1 with a large text and bla bla bla with a large text and bla bla bla </li>
@@ -192,7 +193,7 @@
             </div>
 
             <div class="slide">
-                <i class="fa fa-university fa-3x icon"></i>
+                <i class="fa fa-puzzle-piece fa-3x icon"></i>
                 <h3>Service #1</h3>
                 <ul>
                     <li><i class="fa fa-star"></i> Item 1 with a large text and bla bla bla with a large text and bla bla bla </li>
@@ -204,7 +205,7 @@
             </div>
 
             <div class="slide">
-                <i class="fa fa-university fa-3x icon"></i>
+                <i class="fa fa-rocket fa-3x icon"></i>
                 <h3>Service #1</h3>
                 <ul>
                     <li><i class="fa fa-star"></i> Item 1 with a large text and bla bla bla with a large text and bla bla bla </li>
@@ -361,7 +362,29 @@
         $('.services-slider').slick({
             infinite: true,
             slidesToShow: 4,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 580,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
         });
         
         $('.testimonials-slider').slick({

@@ -37,6 +37,7 @@ a, a:visited, a:active{
     width: 100%;
     display: inline-block;
     position: relative;
+    font-size: 14px;
 }
 
 .row .inner-container{
@@ -81,13 +82,10 @@ a, a:visited, a:active{
     text-shadow: 0 0 3px #FFFFFF;
 }
 
-.header-row .logo{
-    display: inline-block;;
-    width:30%;
+.header-row .column-left{
+    display: inline-block;
     float: left;
-    font-size: 400%;
-    color: #FFFFFF;
-    text-shadow: 2px 2px 1px #003e1f;
+    width:30%;
 }
 
 .header-row .column-right{
@@ -96,6 +94,27 @@ a, a:visited, a:active{
     width:65%;
     padding:0 20px;
 }
+
+.header-row .logo{
+    display: inline-block;;
+    width:100%;
+    float: left;
+    font-size: 400%;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 1px #003e1f;
+}
+
+.header-row small{
+    display: inline-block;;
+    width:100%;
+    float: left;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.8;
+}
+
+
 
 .header-row .phone-number{
     font-size:22px;
@@ -701,6 +720,22 @@ marquee.news a{
 	from { opacity:1; }
 	to { opacity:0; }
 }
+/* certifications ---*/
+.cert-row{
+    padding:40px 0;
+    text-align: center;
+}
+
+.cert-row img{
+    margin:0 10px;
+    width:60px;
+    height:auto;
+    opacity: 0.5;
+}
+
+.cert-row img:hover{
+    opacity: 1;
+}
 
 /* --- Footer ---*/
 .footer-row{
@@ -764,6 +799,87 @@ marquee.news a{
     text-shadow: 0 0 3px #FFFFFF;
 }
 
+/* --- Full screen form ---*/
+.overlay.full-screen{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:9;
+    background: rgba(0,0,0,0.8);
+    display:none;
+}
+
+.overlay.full-screen .trial-form {
+    width: 30%;
+    position: absolute;
+    top: 200px;
+    left: 35%;
+    z-index: 9;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 3px solid #0eb961;
+    -webkit-box-shadow: 0 0 10px #0eb961;
+    -moz-box-shadow: 0 0 10px #0eb961;
+    box-shadow: 0 0 10px #0eb961;
+}
+
+.trial-form h2{
+    width:100%;
+    text-align: center;
+    color: #0eb961;
+}
+
+.trial-form label{
+    display: inline-block;
+    width:100%;
+    margin:10px 0 0;
+}
+
+.trial-form input, .trial-form select{
+    display: inline-block;
+    width:100%;
+    padding:5px;
+    font-size:18px;
+    color: #666;
+    margin-bottom:5px;
+}
+
+.trial-form input[type='checkbox']{
+    width:auto;
+    font-size:30px;
+}
+
+.trial-form input[type='submit']{
+    background: #0eb961;
+    color: #FFF;
+    border:none;
+    margin:5px 0;
+    padding:15px 0;
+    cursor: pointer;
+}
+
+.trial-form .close-button{
+    position: absolute;
+    top:-5px;
+    right:-5px;
+    background: #0eb961;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 100%;
+    -webkit-box-shadow: 0 0 10px #0eb961;
+    -moz-box-shadow: 0 0 10px #0eb961;
+    box-shadow: 0 0 10px #0eb961;
+    cursor: pointer;
+}
+
+
+
+/* -- -Responsive ---*/
 @media screen and (max-width: 1000px) {
     .row .inner-container{
         margin:0 2%;

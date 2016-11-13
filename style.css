@@ -2,7 +2,7 @@
 *** By Integra Studio
 *** 2016
 *** https://www.fiverr.com/integrastudio
-*** green: #0eb961 #0eb961 
+*** blue: #4285f4
 **/
 
 
@@ -47,11 +47,11 @@ a, a:visited, a:active{
 .row .row-title{
     widt:auto;
     font-size:22px;
-    color: #0eb961;
+    color: #4285f4;
     text-transform: uppercase;
     margin:5px auto;
     text-align: center;
-    border-bottom:3px solid #0eb961;
+    border-bottom:3px solid #4285f4;
     display: table;
     position: relative;
     z-index: 2;
@@ -60,17 +60,17 @@ a, a:visited, a:active{
 /* --- Header ----*/
 
 .header-row{
-    background: #0eb961;
+    background: #4285f4;
     padding:10px 0;
     color: #ffffff;
     box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
 
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0eb961+1,10da74+100 */
-    background: #0eb961; /* Old browsers */
-    background: -moz-linear-gradient(top,  #0eb961 1%, #10da74 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #0eb961 1%,#10da74 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  #0eb961 1%,#10da74  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0eb961', endColorstr='#10da74',GradientType=0 ); /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4285f4+1,3861c3+100 */
+    background: #4285f4; /* Old browsers */
+    background: -moz-linear-gradient(top,  #4285f4 1%, #3861c3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #4285f4 1%,#3861c3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #4285f4 1%,#3861c3  100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4285f4', endColorstr='#3861c3',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -108,10 +108,11 @@ a, a:visited, a:active{
     display: inline-block;;
     width:100%;
     float: left;
-    font-size: 10px;
+    font-size: 100%;
     color: #fff;
     text-align: center;
     opacity: 0.8;
+    letter-spacing: 9px;
 }
 
 
@@ -147,7 +148,7 @@ ul.main-menu li{
     float: left;
     margin-bottom:10px;
     margin-right: 10px;
-    background: rgba(15, 164, 94, 0.84);
+    background: rgba(25,25,25,0.5);
     -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.5);
     box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.5);
     position: relative;
@@ -166,7 +167,7 @@ ul.main-menu li ul.sub-menu{
     list-style: none;
     position: absolute;
     top: 60px;
-    background: rgba(15, 164, 94, 0.84);
+    background: rgba(25,25,25,0.5);
     display: block;
     width: 100%;
     height: 0;
@@ -256,10 +257,10 @@ marquee.news a{
 
 .main-slider .slide a{
     background: #FFFFFF;
-    color: #0eb961;
+    color: #4285f4;
     padding: 10px;
-    -webkit-box-shadow: 1px 1px 1px 0 #0eb961;
-    box-shadow: 1px 1px 1px 0 #0eb961;
+    -webkit-box-shadow: 1px 1px 1px 0 #4285f4;
+    box-shadow: 1px 1px 1px 0 #4285f4;
     text-transform: uppercase;
     font-size:14px;
     position: relative;
@@ -267,7 +268,7 @@ marquee.news a{
 }
 
 .main-slider .slide a:hover{
-    background: #0eb961;
+    background: #4285f4;
     color: #FFFFFF;
 }
 
@@ -298,8 +299,8 @@ marquee.news a{
 }
 
 .welcome-icons .box i.icon{
-    border: 2px solid #0eb961;
-    color: #0eb961;
+    border: 2px solid #4285f4;
+    color: #4285f4;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
@@ -328,7 +329,7 @@ marquee.news a{
 }
 
 .welcome-icons a{
-    background: #0eb961;
+    background: #4285f4;
     color: #FFFFFF;
     padding: 8px;
     -webkit-box-shadow: 1px 1px 1px 0 #003e1f;
@@ -340,7 +341,7 @@ marquee.news a{
 
 .welcome-icons a:hover{
     background: #FFFFFF;
-    color: #0eb961;
+    color: #4285f4;
 }
 
 /* --- Services ----*/
@@ -392,8 +393,8 @@ marquee.news a{
 }
 
 .services-slider .slide:hover{
-    -webkit-box-shadow: 1px 1px 5px 5px #0eb961;
-    box-shadow: 1px 1px 5px 5px #0eb961;
+    -webkit-box-shadow: 1px 1px 5px 5px #4285f4;
+    box-shadow: 1px 1px 5px 5px #4285f4;
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -403,7 +404,7 @@ marquee.news a{
 
 
 .services-slider .slide i.icon{
-    background: #0eb961;
+    background: #4285f4;
     border: 2px solid #FFF;
     color: #FFF;
     -webkit-border-radius: 100%;
@@ -418,7 +419,7 @@ marquee.news a{
 
 .services-slider h3{
     font-size:20px;
-    color: #0eb961;
+    color: #4285f4;
 }
 
 .services-slider .slide ul{
@@ -431,7 +432,7 @@ marquee.news a{
 }
 
 .services-slider a{
-    background: #0eb961;
+    background: #4285f4;
     color: #FFF;
     padding: 8px;
     -webkit-box-shadow: 1px 1px 1px 0 #003e1f;
@@ -443,7 +444,7 @@ marquee.news a{
 
 .services-slider a:hover{
     background: #FFF;
-    color: #0eb961;
+    color: #4285f4;
 }
 
 /* -- Free Trial ---*/
@@ -481,7 +482,7 @@ marquee.news a{
 }
 
 .free-trial a{
-    background: #0eb961;
+    background: #4285f4;
     color: #FFF;
     padding: 8px;
     -webkit-box-shadow: 1px 1px 1px 0 #003e1f;
@@ -495,7 +496,7 @@ marquee.news a{
 .info-icons{
     display: inline-block;
     width: 32%;
-    background: #0eb961;
+    background: #4285f4;
     padding:10px;
     float: left;
     height: 172px;
@@ -572,7 +573,7 @@ marquee.news a{
 
 .members-icons h2{
     width:100%;
-    color: #0eb961;
+    color: #4285f4;
     text-align: center;
     font-size: 20px;
     font-weight: normal;
@@ -594,7 +595,7 @@ marquee.news a{
 }
 
 .members-icons .box i.icon{
-    background: #0eb961;
+    background: #4285f4;
     color: #FFFFFF;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
@@ -675,7 +676,7 @@ marquee.news a{
 .testimonials .view-all{
 	width: 100%;
     font-size: 12px;
-    color: #0eb961;
+    color: #4285f4;
 	display: inline-block;
     text-align: right;
 }
@@ -721,9 +722,15 @@ marquee.news a{
 	to { opacity:0; }
 }
 /* certifications ---*/
-.cert-row{
-    padding:40px 0;
+
+
+.cert-row {
+    padding: 40px 0;
     text-align: center;
+    width: 60px;
+    position: fixed;
+    top: 200px;
+    left: 0;
 }
 
 .cert-row img{
@@ -769,8 +776,8 @@ marquee.news a{
 .footer-column h2{
     width:100%;
     font-family: 'Oswald', sans-serif ;
-    color: #0eb961;
-    border-bottom: 2px solid #0eb961;
+    color: #4285f4;
+    border-bottom: 2px solid #4285f4;
 }
 
 .footer-column ul{
@@ -822,16 +829,16 @@ marquee.news a{
     -moz-border-radius: 10px;
     border-radius: 10px;
     padding: 10px;
-    border: 3px solid #0eb961;
-    -webkit-box-shadow: 0 0 10px #0eb961;
-    -moz-box-shadow: 0 0 10px #0eb961;
-    box-shadow: 0 0 10px #0eb961;
+    border: 3px solid #4285f4;
+    -webkit-box-shadow: 0 0 10px #4285f4;
+    -moz-box-shadow: 0 0 10px #4285f4;
+    box-shadow: 0 0 10px #4285f4;
 }
 
 .trial-form h2{
     width:100%;
     text-align: center;
-    color: #0eb961;
+    color: #4285f4;
 }
 
 .trial-form label{
@@ -855,7 +862,7 @@ marquee.news a{
 }
 
 .trial-form input[type='submit']{
-    background: #0eb961;
+    background: #4285f4;
     color: #FFF;
     border:none;
     margin:5px 0;
@@ -867,14 +874,56 @@ marquee.news a{
     position: absolute;
     top:-5px;
     right:-5px;
-    background: #0eb961;
+    background: #4285f4;
     color: #ffffff;
     padding: 8px;
     border-radius: 100%;
-    -webkit-box-shadow: 0 0 10px #0eb961;
-    -moz-box-shadow: 0 0 10px #0eb961;
-    box-shadow: 0 0 10px #0eb961;
+    -webkit-box-shadow: 0 0 10px #4285f4;
+    -moz-box-shadow: 0 0 10px #4285f4;
+    box-shadow: 0 0 10px #4285f4;
     cursor: pointer;
+}
+
+/* --- Floating Tab --*/
+.floating-tab{
+    position: fixed;
+    top: 200px;
+    right: -200px;
+    background: #FFF;
+    padding:20px;
+    width:200px;
+    border: 2px solid #4285f4;
+    z-index: 999;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+
+.floating-tab:hover{
+    right: -2px;
+}
+
+.floating-tab .tab{
+    background: #4285f4;
+    color: #FFF;
+    font-size: 22px;
+    text-transform: uppercase;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    padding: 10px;
+    position: absolute;
+    top: 80px;
+    left:-86px;
+}
+
+.floating-tab .tab-menu li{
+    padding:10px;
+}
+
+.floating-tab .tab-menu li a{
+    color: #4285f4;
 }
 
 
@@ -901,6 +950,15 @@ marquee.news a{
         margin:20px 0 0;
         height:auto;
         padding-bottom: 20px;
+    }
+
+    .cert-row {
+        padding: 40px 0;
+        text-align: center;
+        width: 100%;
+        position: relative;
+        top: 0px;
+        left: 0;
     }
 
     .footer-column{
